@@ -3,83 +3,129 @@
     margin: 0px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+/*ESTILOS PARA CLASES QUE SE USAN EN MULTIPLE ETIQUETAS*/
+.mount{
+    font-family: 'Montserrat', sans-serif;
+}
 
+.graytext {
+    color: hsl(228, 12%, 48%) ;
+}
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.greentext {
+    color: hsl(158, 36%, 37%);
+}
 
+.fraunces{
+    font-family: 'Fraunces', serif;
+}
+/*FIN DE ESTILOS PARA CLASES*/
+
+/*DEFINICION DE FONDO Y TAMAÑO DE LETRA PARA LA PAGINA*/
 body {
     background-color: hsl(30, 38%, 92%) ;
     font-size: 14px;
 }
+
+/*ESTILO PARA EL CONTENIDO PRINCIPAL DE LA PAGINA Y FLEX PARA ACOMODAR SUS ELEMENTOS*/
 main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*ESTILOS PARA LA PLANTILLA DE LA CARTA DE PRODUCTO*/
+
+/*ESTILO PARA LA BASE DE LA CARTA*/
 .card {
     display: grid;
     grid-template-areas:
     'image content';
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    width: 600px;
-    height: 450px;
-    margin-top: 175px;
-    margin-bottom: 175px;
+    width: 42%;
+    height: 56%;
+    margin-top: 12.5em;
+    margin-bottom: 5.78em;
 }
-img {
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px;
+
+/*ESTILOS PARA LA IMAGEN DEL PRODUCTO EN LA CARTA*/
+.card-product-image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 0px 0px 10px;
+   
 }
+
+/*ESTILOS PARA ACOMODAR EL TAMAÑO DEL CONTENEDOR DE LA IMAGEN EN LA CARTA*/
 .image-card{
     grid-area: image;
+    width: 21em;
+    height: 33em;
 }
+/*FIN DE ESTILOS PARA LA IMAGEN DEL PRODUCTO EN LA CARTA*/
+
+/*ESTILOS PARA EL CONTENEDOR DEL CONTENIDO DE LA CARTA*/
+/*SE DISTRIBUYEN LOS ELEMENTOS DEL CONTENEDOR EN MANERA DE COLUMNA DE MANERA ESPACIADA ENTRE ELLOS Y SE LE AGREGA MARGEN AL CONTENEDOR*/
 .content-card {
     grid-area: content;
-    margin: 30px 30px;
+    margin: 2.15em 2.15em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.item1{
-    color: hsl(228, 12%, 48%) ;
-    font-family: 'Montserrat', sans-serif;
-}
-.item2 {
-    font-family: 'Fraunces', serif;
-}
-.item3 {
-    font-family: 'Montserrat', sans-serif;
-    color:  hsl(228, 12%, 48%);
-}
-.precio1 {
-    font-family: 'Fraunces', serif;
-    color: hsl(158, 36%, 37%);
-    font-size: 2em;
-}
-.precio2 {
-    font-family: 'Montserrat', sans-serif;
-    color:  hsl(228, 12%, 48%);
-    font-size: 0.7em;
-    margin-left: 10px;
-}
-.link-button {
-
-}
-.link-button {
-    font-family: 'Montserrat', sans-serif;
-    background-color:hsl(158, 36%, 37%);
-    text-align: center;
-    padding: 18px 62px;
-    border-radius: 10px;
-    font-size: 10px;
-    color: white;
-}
-.precios {
+/*ESTILOS PARA EL CONTENEDOR DE LOS PRECIOS*/
+/*SE DISTRIBUYEN LOS ELEMENTOS DEL CONTENDOR DE MANERA CENTRADA Y EN FORMA DE FILA*/
+.prices {
     display: flex;
     justify-content:flex-start;
     align-items: center;
 }
+
+/*PRECIO DE DESCUENTO*/
+.priceOne {
+    font-size: 2em;
+}
+
+/*PRECIO ANTERIOR*/
+.priceTwo {
+    font-size: 0.7em;
+    margin-left: 0.71em;
+}
+/*FIN DE ESTILOS PARA EL CONTENEDOR DE LOS PRECIOS*/
+
+/*ESTILOS PARA EL BOTON DE AGREGAR AL CARRITO DE LA CARTA*/
+/*SE DEFINE EL COLOR DE FONDO, BORDES, CENTRADO DEL TEXTO Y TAMAÑO*/
+.card-link-button {
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    padding: 1.56em 4.65em;
+    border-radius: 10px;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/*SE LE APLICA PSEUDOCLASE FOCUS PARA CAMBIAR DE COLOR DE FONDO Y MANTENER MISMO TAMAÑO AL AGREGAR BORDER CUANDO ESTE EN EL ESTADO FOCUS*/
+.card-link-button:focus{
+    border: 0.21em solid hsl(158, 36%, 37%);
+    background-color: hsl(212, 21%, 14%);
+    padding: 1.07em 4.21ems;
+}
+
+/*SE LE APLICA PSEUDOCLASE HOVER PARA CAMBIAR EL COLOR DE FONDO CUANDO ESTE TENGA EL MOUSE SOBRE EL*/
+.card-link-button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+/*FIN DE ESTILOS PARA EL BOTON DE AGREGAR A CARRITO*/
+/*FIN DE ESTILOS PARA LA PLANTILLA DEL CONTENEDOR DE LA CARTA*/
+
+/*ESTILO PARA LOS DERECHOS DEL DISEÑO Y DESARROLLO DE LA PAGINA*/
+.attribution { font-size: 11px; text-align: center; margin-bottom:80px; }
+
+
+.attribution a { color: hsl(228, 45%, 44%); }
+/*FIN DE ESTILO PARA LOS DERECHOS DEL DISEÑO Y DESARROLLO DE LA PAGINA*/

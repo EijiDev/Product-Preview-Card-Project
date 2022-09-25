@@ -5,40 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--INICIO DE LINKS PARA TRAER LAS FUENTES DESDE LA API DE GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!--CIERRE DE LINKS-->
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
+
+  <!--INICIO DEL CONTENIDO PRINCIPAL-->
   <main>
-    <div class="card">
-      <div class="image-card">
-        <img src="./images/image-product-desktop.jpg" width="300px" height="450px" />
+
+    <!--INICIO DEL CONTENEDOR DE LA CARTA DE PRODUCTO-->
+    <div class="card">  
+
+      <!--CONTENEDOR PARA LA IMAGEN DEL PRODUCTO-->
+      <div class="image-card"> 
+
+        <!--FOTO PRODUCTO-->
+        <img class="card-product-image"src="./images/image-product-desktop.jpg" alt="Imagen del producto"/>
+
       </div>
-      <div class="content-card">
-        <span class="item1">P E R F U M E</span>
-  
-        <h1 class="item2">Gabrielle Essence Eau De Parfum</h1>
+      <!--CIERRE DEL CONTENEDOR PARA LA IMAGEN-->
       
-        <p class="item3">
-          A floral, solar and voluptuous interpretation composed by Olivier Polge,
-          Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="precios">
-          <b class="precio1">$149.99</b>
-          <s class="precio2">$169.99</s>
+      <!--CONTENEDOR PARA EL CONTENIDO DE LA CARTA-->
+      <div class="content-card">
+        <!--CATEGORIA DEL PRODUCTO-->
+        <span class="card-category-name mount graytext">P E R F U M E</span>
+        
+        <!--NOMBRE DEL PRODUCTO-->
+        <h1 class="card-product-name fraunces">Gabrielle Essence Eau De Parfum</h1>
+      
+        <!--DESCRIPCION DEL PRODUCTO-->
+        <p class="item3 mount graytext">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+
+        <!--CONTENEDOR PARA ORDENAR PRECIOS-->
+        <div class="prices">
+          <!--PRECIO DESCUENTO-->
+          <b class="priceOne fraunces greentext">$149.99</b>
+          <!--PRECIO ANTERIOR-->
+          <s class="priceTwo mount graytext">$169.99</s>
         </div>
-        <a class="link-button" href="#">Add to Cart</a>
+        
+        <!--INICIO DEL BOTON PARA AGREGAR AL CARRITO-->
+        <a class="card-link-button mount greentext" href="#">Add to Cart</img></a>
+        <!--FIN BOTON-->
+
       </div>
+      <!--CIERRE DEL CONTENEDOR PARA EL CONTENIDO DE LA CARTA-->
+
     </div>
+    <!--CIERRE DEL CONTENEDOR DE LA CARTA PARA EL PRODUCTO-->
+
   </main>
+  <!--FIN DE LA CARTA DEL PRODUCTO-->
+
+  <!--INICIO DEL FOOTER-->
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">EijiDev</a>.
     </div>
   </footer>
+  <!--FIN DEL FOOTER-->
 </body>
 </html>
